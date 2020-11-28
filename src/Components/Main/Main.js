@@ -250,7 +250,7 @@ function Main() {
       </section>
 
       <section className="youtubeVideosWrapper top-100">
-        <Youtube />
+        {/* <Youtube /> */}
       </section>
     </div>
   );

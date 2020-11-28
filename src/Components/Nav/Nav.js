@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+
 import HeaderLink from "./HeaderLink/HeaderLink";
 
 import logo from "../../images/icons/logo-sm.png";
@@ -18,55 +20,29 @@ function Nav() {
           >
             ☰
           </button>
-          <a className="navbar-brand mx-auto" href="#">
-            <img src={logo} />
+          <a className="navbar-brand mx-auto" href="/">
+            <img src={logo} alt="" />
           </a>
 
           <div className="navbar-collapse collapse">
             <ul className="navbar-nav nav-justified w-100 nav-fill">
+              <HeaderLink linkName="Mac" linkUrl="/mac/" />
+              <HeaderLink linkName="iphone" linkUrl="/iphone" />
+              <HeaderLink linkName="ipad" linkUrl="/ipad" />
+              <HeaderLink linkName="watch" linkUrl="/watch" />
+              <HeaderLink linkName="tv" linkUrl="/tv" />
+              <HeaderLink linkName="Music" linkUrl="/music" />
+              <HeaderLink linkName="Support" linkUrl="/support" />
+
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/mac/">
-                  Mac
+                <a className="nav-link js-scroll-trigger" href="/search">
+                  <img src={search} alt="" />
                 </a>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  iphone
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  ipad
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  watch
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  tv
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Music
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#">
-                  Support
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/search/">
-                  <img src={search} />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/cart/">
-                  <img src={cart} />
+                <a className="nav-link js-scroll-trigger" href="/cart">
+                  <img src={cart} alt="" />
                 </a>
               </li>
             </ul>
