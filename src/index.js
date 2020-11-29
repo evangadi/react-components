@@ -4,4 +4,8 @@ import ReactDOM from "react-dom";
 import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 
+// Bootstrap CSS import 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 ReactDOM.render(<App />, document.getElementById("root"));

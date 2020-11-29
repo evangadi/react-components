@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Renders components based on the URL
 
 // Home page
-import Nav from "./Components/Nav/Nav";
+import Navigation from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
 import Main from "./Components/Main/Main";
 
@@ -19,21 +19,19 @@ import Mac from "./Pages/Mac/Mac";
 import Four04 from "./Pages/Four04/Four04";
 import Productpage from "./Pages/Productpage/Productpage";
 
-// import "./App.css";
-
-import "./css/bootstrap.css";
+// import general css
 import "./css/styles.css";
 
 function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        <Navigation />
         <Switch>
           <Route path="/" exact component={Main} />
+          <Route path="/mac" exact component={Mac} />
           <Route path="/iphone" exact component={Iphone} />
           <Route path="/iphone/:pid" exact component={Productpage} />
-          <Route path="/mac" exact component={Mac} />
           <Route path="/" component={Four04} />
         </Switch>
         <Footer />
@@ -41,23 +39,5 @@ function App() {
     </Router>
   );
 }
-
-// function App() {
-//   return (
-//     <Router>
-//       <div>
-//         <Nav />
-//         <Switch>
-//           <Route path="/" exact component={Main} />
-//           <Route path="/mac" exact component={Mac} />
-//           <Route path="/iphone" exact component={Iphone} />
-//           <Route path="/iphone/:pid" exact component={Productpage} />
-//           <Route path="/" component={Four04} />
-//         </Switch>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
 
 export default App;
