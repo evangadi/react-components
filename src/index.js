@@ -6,6 +6,6 @@ import App from "./App";
 
 // Bootstrap CSS import 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+<p>hey how are u</p>
 
 ReactDOM.render(<App />, document.getElementById("root"));

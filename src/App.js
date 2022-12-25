@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Route
 // Renders components based on the URL
 
+<h1>hello i am abdu </h1>
 // Home page
 import Navigation from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
